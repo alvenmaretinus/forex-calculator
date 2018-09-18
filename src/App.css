@@ -1,28 +1,125 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.forex {
+  width: 480px;
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
 }
 
-.App-title {
-  font-size: 1.5em;
+.forex__input {
+  padding: 10px;
+  border-bottom: 1px solid black;
 }
 
-.App-intro {
-  font-size: large;
+.forex__input__container {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.forex__input__heading {
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.forex__input__name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.forex__input__field {
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  text-align: right;
+}
+
+.forex__items {
+  padding: 10px;
+}
+
+.forex__item {
+  display: flex;
+  border: 1px solid black;
+}
+
+.forex__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.forex__item__content {
+  width: 100%;
+  padding: 10px;
+}
+
+.forex__item__remove {
+  width: 30px;
+  flex-shrink: 0;
+  background: #dedede;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.forex__item__heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.forex__full__name {
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.forex__rate {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.forex__add {
+  margin: 0 10px 10px;
+  font-size: 18px;
+  padding: 20px 10px;
+  background: #dedede;
+  border: none;
+  cursor: pointer;
+}
+
+.forex__submit__form {
+  display: flex;
+}
+
+.forex__selector {
+  width: 100%;
+  margin: 0 10px 10px;
+  font-size: 18px;
+  padding: 20px 10px;
+  border-radius: 0;
+}
+
+.forex__submit {
+  width: 100px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 20px 10px;
+  background: #dedede;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
